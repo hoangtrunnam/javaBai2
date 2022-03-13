@@ -9,6 +9,7 @@ package nuce.cntt.oop.th1.bai2;
  * @author Admin
  */
 public class Engine {
+
     String brand;
     int wattage;
     boolean statusEngine;
@@ -20,6 +21,10 @@ public class Engine {
         this.brand = brand;
         this.wattage = wattage;
         this.statusEngine = statusEngine;
+    }
+
+    public boolean isStatusEngine() {
+        return statusEngine;
     }
 
     public String getBrand() {
@@ -46,24 +51,21 @@ public class Engine {
         this.statusEngine = statusEngine;
 //        System.out.println("status engine la :"+statusEngine);
     }
-    
+
     /*
     *ham khoi dong dong co, neu dong co tat thi set thanh bat
      */
-    public boolean start(){
-        if(!statusEngine){
-            return this.statusEngine=true;
-        }
-        return false;
+    public void start() {
+        this.statusEngine = true;
+        System.out.println("engine da khoi dong");
     }
-    
+
     /*
     *ham tat may
-    */
-    public void turnOff(){
-        if(statusEngine){
-            this.statusEngine=false;
-        }
+     */
+    public void turnOff() {
+        this.statusEngine = false;
+        System.out.println("engine da tat");
     }
-    
+
 }

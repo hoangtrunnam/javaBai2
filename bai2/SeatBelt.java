@@ -22,6 +22,12 @@ public class SeatBelt {
         this.statusSeatBelt = statusSeatBelt;
     }
 
+    public boolean isStatusSeatBelt() {
+        return statusSeatBelt;
+    }
+    
+    
+
     public String getBrand() {
         return brand;
     }
@@ -48,6 +54,7 @@ public class SeatBelt {
     
     public void changeStatusSeatBelt(boolean stt){
         this.statusSeatBelt=stt;
+        System.out.println("da that day an toan hay chua"+stt);
     }
     
 }

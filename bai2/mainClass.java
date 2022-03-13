@@ -16,13 +16,18 @@ public class mainClass {
 
     public static void main(String[] args) {
 
-        Car car = new Car();
-        SeatBelt seatBelt = new SeatBelt();
-        Engine engine = new Engine();
+        
+        SeatBelt seatBelt = new SeatBelt("meccc",33,false);
+        Engine engine = new Engine("mecsdes",200,false);
+        
+        Car car = new Car("mec","mec",false,engine,seatBelt);
+        
+        car.started();
+//        car.run();
+//        car.stop();
+        car.leaveCar();
         
         
-        engine.setStatus(true);
-        car.run();
     }
     
 }
